@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    font-family: Helvetica;
+    font-size: 11px;
+    color: #666666;
+}
+#entete {
+    background-image: url(../images/fond_degrade.png);
+    background-repeat: repeat-x;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 65px;
+    margin-top: 0px; /* j'ai remplacé l'ancienne valeur qui était de 5px */
+}
+#utilisateur {
+    float: right;
+    margin-top: 5px;
+    text-align: center;
+}
+#entete h1,#entete .nom {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.deconnexion {
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+.deconnexion:active {
+    background-color: grey;
+}
+#menu_principal{
+    background-color: #087B8B;
+    color: white;
+}
+
+#menu_principal ul {
+    margin: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: -20px;
+}
+
+#menu_principal ul > li {
+    display: inline-block;
+    height: 28px;
+    vertical-align: middle;
+    line-height: 28px;
+    font-size: 1.2em;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+#menu_principal ul > li+li {
+     border-left:1px solid #18BFD6;
+}
+
+#menu_principal ul > li > a {
+    color: white;
+    text-decoration:none;
+}
+
+#menu_principal ul > li:hover {
+    background-color: #4ED7EB;
+}
+
+#menu_principal ul > li:active {
+    background-color:#FFB618;
+}
+#menu_principal ul > li:focus {
+    color:#FFB618;
+}
+
+#menu_principal ul > li.active > a{
+    color:#FFB618;
+}
+
+#menu_principal ul > li.active:hover{
+    background-color: inherit;
+}
+
+
+.datagrid{
+    border: 1px solid #AAAAAA;
+    border-radius: 4px 4px;
+    margin-top: 20px;
+}
+
+#liste_appel{
+    margin-left:auto;
+    margin-right:auto;
+    /*width: 80%;*/
+}
+
+table.datagrid > caption {
+    font-size: 1.5em;
+    margin-bottom: 12px;
+}
+
+table.datagrid > thead {
+    background-image: linear-gradient(white,#EEEEEE);
+}
+
+.datagrid th{
+    text-align: left;
+    height: 32px;
+}
+
+table.datagrid caption input[type=submit]{
+	background-color: #FFB618;
+	border: none;
+	color: white;
+}
+
+#liste_appel thead th{
+    width: 120px;
+}
+#liste_appel thead th+th{
+    width: 80px;
+}
+
+#liste_appel thead th+th+th{
+    width: 160px;
+}
+#liste_appel thead th+th+th+th{
+    width: 80px;
+}
+
+.datagrid thead th a{
+    color: #666666;
+}
+
+table.datagrid thead th a span.tri {
+    display: inline-block;
+    height: 24px;
+    width: 16px;
+    background-image: url("../images/icone_tri.png");
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+    vertical-align: middle;
+}
+table.datagrid thead th a span.asc{      
+
+background-image: url("../images/icone_tri_asc.png");
+background-position: 100% 26%;
+
+}
+table.datagrid thead th a span.desc{      
+
+background-image: url("../images/icone_tri_desc.png");
+background-position: 100% 70%;
+
+}
+
+table.datagrid tbody td form button{
+    border: none;
+    background-color: inherit;
+} 
+
+table.datagrid tbody tr:nth-child(odd){
+    background-color:#EEEFFE;
+}
+
+table.datagrid tbody tr:hover{
+    background-color:#FFEAEB;
+}
+/* centrer le message qui désigne s'il s'agit d'une modification, création ou suppression d'un utilisateur */
+.message{
+	text-align:	center;
+}
