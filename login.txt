@@ -1,4 +1,4 @@
 login & mot de passe fonctionnel :
 
-login : logintest
-mdp : logintest
+login : JoelL
+mdp : latale15
